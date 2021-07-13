@@ -37,9 +37,9 @@ jobs:
     - name: Download Ngrok & NSSM
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/hamzah14/MH/nssm.exe -OutFile nssm.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/hamzah14/MH/NGROK-Setup.bat -OutFile NGROK-Setup.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/hamzah14/MH/t.bat -OutFile t.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/hamzah14/MH/main/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/hamzah14/MH/main/NGROK-Setup.bat -OutFile NGROK-Setup.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/hamzah14/MH/main/t.bat -OutFile t.bat
         Expand-Archive ngrok.zip
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
